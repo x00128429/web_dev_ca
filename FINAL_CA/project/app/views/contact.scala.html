@@ -1,0 +1,308 @@
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Contact Us") {
+
+  <!-- wpf loader Two -->
+  <div id="wpf-loader-two">
+    <div class="wpf-loader-two-inner">
+      <span>Loading</span>
+    </div>
+  </div>
+  <!-- / wpf loader Two -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+  <header id="aa-header">
+
+  <!-- / header top  -->
+
+  <!-- start header bottom  -->
+  <div class="aa-header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-header-bottom-area">
+            <!-- logo  -->
+            <div class="aa-logo">
+              <!-- Text based logo -->
+              <a href="index.html">
+                    <p>ITT<strong>Music</strong> <span>For All your Music Needs</span></p>
+       </a>
+              <!-- img based logo -->
+              <!-- <a href="index.html"><img src="@routes.Assets.versioned("img/logo.jpg")" alt="logo img"></a> -->
+            </div>
+            <!-- / logo  -->
+             <!-- cart box -->
+            <div class="aa-cartbox">
+              <a class="aa-cart-link" href="#">
+                <span class="fa fa-shopping-basket"></span>
+                <span class="aa-cart-title">SHOPPING CART</span>
+                <span class="aa-cart-notify">2</span>
+              </a>
+              <div class="aa-cartbox-summary">
+                <ul>
+                  <li>
+                    <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-2.jpg")" alt="img"></a>
+                    <div class="aa-cartbox-info">
+                      <h4><a href="#">Product Name</a></h4>
+                      <p>1 x $250</p>
+                    </div>
+                    <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                  </li>
+                  <li>
+                    <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-1.jpg")" alt="img"></a>
+                    <div class="aa-cartbox-info">
+                      <h4><a href="#">Product Name</a></h4>
+                      <p>1 x $250</p>
+                    </div>
+                    <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                  </li>
+                  <li>
+                    <span class="aa-cartbox-total-title">
+                      Total
+                    </span>
+                    <span class="aa-cartbox-total-price">
+                      $500
+                    </span>
+                  </li>
+                </ul>
+                <a class="aa-cartbox-checkout aa-primary-btn" href="#">Checkout</a>
+              </div>
+            </div>
+            <!-- / cart box -->
+            <!-- search box -->
+            <div class="aa-search-box">
+              <form action="">
+                <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                <button type="submit"><span class="fa fa-search"></span></button>
+              </form>
+            </div>
+            <!-- / search box -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / header bottom  -->
+  </header>
+  <!-- / header section -->
+  <!-- menu -->
+  <section id="menu">
+  <div class="container">
+    <div class="menu-area">
+      <!-- Navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <!-- Left nav -->
+          <ul class="nav navbar-nav">
+            <li><a href="@routes.HomeController.index()">Home</a></li>
+            <li><a href="@routes.HomeController.guitars()">Guitars</a></li>
+            <li><a href="@routes.HomeController.drums()">Drums</a></li>
+            <li><a href="@routes.HomeController.keyboards()">Keyboards</a></li>
+            <li><a href="#">Equipment<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="@routes.HomeController.amps()">Amps</a></li>
+                <li><a href="@routes.HomeController.mics()">Mics</a></li>
+                <li><a href="@routes.HomeController.lighting()">Lighting</a></li>
+              </ul>
+            </li>
+            </li>
+            <li><a href="@routes.HomeController.events()">Events</a></li>
+            <li><a href="@routes.HomeController.contact()">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- / menu -->
+
+  <!-- catg header banner section -->
+  <section id="aa-catg-head-banner">
+  <img src="@routes.Assets.versioned("img/Contact/1.jpg")" alt="fashion img">
+  <div class="aa-catg-head-banner-area">
+   <div class="container">
+    <div class="aa-catg-head-banner-content">
+      <h2>Contact</h2>
+    </div>
+   </div>
+  </div>
+  </section>
+  <!-- / catg header banner section -->
+  <!-- start contact section -->
+  <section id="aa-contact">
+  <div class="container">
+   <div class="row">
+     <div class="col-md-12">
+       <div class="aa-contact-area">
+         <div class="aa-contact-top">
+           <h2>We are wating to assist you..</h2>
+           <p>Please Find Directions to our store by Locating us with Google Maps</p>
+     <p>ITT Music
+  Blessington Rd, Tallaght, Dublin 24, D24 FKT9</p>
+         </div>
+         <!-- contact map -->
+         <div class="aa-contact-map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.9148142643116!2d-6.365182384073268!3d53.29106098655179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670b4b8ec071f5%3A0xb6cf7501e0d9522a!2sITT+Dublin!5e0!3m2!1sen!2sie!4v1478702647122" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </div>
+         <!-- Contact address -->
+         <div class="aa-contact-address">
+           <div class="row">
+             <div class="col-md-8">
+               <div class="aa-contact-address-left">
+                 <form class="comments-form contact-form" action="">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Name" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                   <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="Subject" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="Company" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                  </div>
+                  <button class="aa-secondary-btn">Send</button>
+                </form>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="aa-contact-address-right">
+                 <address>
+                   <h4>ITT Music</h4>
+                   <p>Please Contact us on any of the following ways  </p>
+                   <p><span class="fa fa-home"></span>ITT Music
+  Blessington Rd, Tallaght, Dublin 24, D24 FKT9</p>
+                   <p><span class="fa fa-phone"></span>0987769554</p>
+                   <!--Have to use &#64 to display the email address properly as the framework searches for a variable with at sign-->
+                   <p><span class="fa fa-envelope"></span>Email: support&#64ittmusic.com</p>
+                 </address>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+  </section>
+
+  <!-- Subscribe section -->
+  <section id="aa-subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-subscribe-area">
+          <h3>Subscribe our newsletter </h3>
+          <p>Full of details on Exciting Deals and Products We have at ITT Music</p>
+          <form action="" class="aa-subscribe-form">
+            <input type="email" name="" id="" placeholder="Enter your Email">
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- / Subscribe section -->
+
+ <!-- footer -->
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-top-area">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <h3>Main Menu</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="guitars.html">Guitars</a></li>
+                      <li><a href="drums.html">Drums</a></li>
+                      <li><a href="keyboards.html">Keyboards</a></li>
+                      <li><a href="events.html">Events</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Extra Links</h3>
+                      <ul class="aa-footer-nav">
+                  
+                        <li><a href="Amps.html">Amps</a></li>
+                        <li><a href="Lighting.html">Lighting</a></li>
+                          <li><a href="Mics.html">Mics</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Contact Us</h3>
+                      <address>
+                        <p>ITT Music , Tallaght</p>
+                        <p><span class="fa fa-phone"></span>+1 2354635400</p>
+                        <p><span class="fa fa-envelope"></span>ITT Musicgmail.com</p>
+                      </address>
+                      <div class="aa-footer-social">
+                        <a href="https://www.facebook.com/login/"><span class="fa fa-facebook"></span></a>
+                        <a href="https://twitter.com/twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="fa fa-twitter"></span></a>
+                        <a href="https://plus.google.com/collections/featured"><span class="fa fa-google-plus"></span></a>
+                        <a href="https://www.youtube.com/"><span class="fa fa-youtube"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
+  <!-- / footer -->
+  
+
+}

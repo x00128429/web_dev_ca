@@ -1,0 +1,524 @@
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Lighting") {
+
+  <!-- wpf loader Two -->
+  <div id="wpf-loader-two">
+    <div class="wpf-loader-two-inner">
+      <span>Loading</span>
+    </div>
+  </div>
+  <!-- / wpf loader Two -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+  <header id="aa-header">
+    <!-- start header top  -->
+    <div class="aa-header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-top-area">
+              <!-- start header top left -->
+              <div class="aa-header-top-left">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header top  -->
+
+    <!-- start header bottom  -->
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <!-- logo  -->
+              <div class="aa-logo">
+                <!-- Text based logo -->
+                <a href="index.html">
+                    <p>ITT<strong>Music</strong> <span>For All your Music Needs</span></p>
+           </a>
+                <!-- img based logo -->
+                <!-- <a href="index.html"><img src="@routes.Assets.versioned("img/logo.jpg")" alt="logo img"></a> -->
+              </div>
+              <!-- / logo  -->
+              <!-- cart box -->
+              <div class="aa-cartbox">
+                <a class="aa-cart-link" href="#">
+                  <span class="fa fa-shopping-basket"></span>
+                  <span class="aa-cart-title">SHOPPING CART</span>
+                  <span class="aa-cart-notify">2</span>
+                </a>
+                <div class="aa-cartbox-summary">
+                  <ul>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-2.jpg")" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-1.jpg")" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <span class="aa-cartbox-total-title">
+                        Total
+                      </span>
+                      <span class="aa-cartbox-total-price">
+                        $500
+                      </span>
+                    </li>
+                  </ul>
+                  <a class="aa-cartbox-checkout aa-primary-btn" href="#">Checkout</a>
+                </div>
+              </div>
+              <!-- / cart box -->
+              <!-- search box -->
+              <div class="aa-search-box">
+                <form action="">
+                  <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+              <!-- / search box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header bottom  -->
+  </header>
+  <!-- / header section -->
+
+  <!-- menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-area">
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="@routes.HomeController.index()">Home</a></li>
+              <li><a href="@routes.HomeController.guitars()">Guitars</a></li>
+              <li><a href="@routes.HomeController.drums()">Drums</a></li>
+              <li><a href="@routes.HomeController.keyboards()">Keyboards</a></li>
+              <li><a href="#">Equipment<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="@routes.HomeController.amps()">Amps</a></li>
+                  <li><a href="@routes.HomeController.mics()">Mics</a></li>
+                  <li><a href="@routes.HomeController.lighting()">Lighting</a></li>
+                </ul>
+              </li>
+              </li>
+              <li><a href="@routes.HomeController.events()">Events</a></li>
+              <li><a href="@routes.HomeController.contact()">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / menu -->
+
+  <!-- catg header banner section -->
+  <section id="aa-catg-head-banner">
+    <img src="@routes.Assets.versioned("img/equipment/lights_banner.png")" alt="lights img">
+    <div class="aa-catg-head-banner-area">
+      <div class="container">
+        <div class="aa-catg-head-banner-content">
+          <h2>Lighting</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / catg header banner section -->
+
+  <!-- product category -->
+  <section id="aa-product-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-product-details-area">
+            <div class="aa-product-details-content">
+              <div class="row">
+                <!-- Modal view slider -->
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                  <div class="aa-product-view-slider">
+                    <div id="demo-1" class="simpleLens-gallery-container">
+                      <div class="simpleLens-container">
+                        <div class="simpleLens-big-image-container">
+                          <a data-lens-image="@routes.Assets.versioned("img/equipment/stairville_light.jpg")" class="simpleLens-lens-image"><img src="@routes.Assets.versioned("img/equipment/stairville_light.jpg")" class="simpleLens-big-image"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal view content -->
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                  <div class="aa-product-view-content">
+                    <h3>Stairvile Octagon Theater CW/WW 36x1W</h3>
+                    <div class="aa-price-block">
+                      <span class="aa-product-view-price">€149</span>
+                      <p class="aa-product-avilability">Avilability: <span>In stock</span></p>
+                    </div>
+                    <p>Stairville Octagon Theatre CW / WW 36x1W, LED Spot with continuously adjustable colour temperature. </p>
+
+                    <p class="aa-prod-category">
+                      Category: <a href="#">Lighting</a>
+                    </p>
+                  </div>
+                  <div class="aa-prod-view-bottom">
+                    <a class="aa-add-to-cart-btn" href="#">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aa-product-details-bottom">
+            <ul class="nav nav-tabs" id="myTab2">
+              <li><a href="#description" data-toggle="tab">Description</a></li>
+              <li><a href="#review" data-toggle="tab">Reviews</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="description">
+                <p>Stairville Octagon Theatre CW / WW 36x1W, LED Spot with continuously adjustable color temperature. The Octagon Theatre LED thomann Spot is a theater lights DMX controlled, highly recommenden by many theaters and festival halls, but also in the live tour life makes a brilliant impressionable figure. The fanless design makes the Octagon Theatre in front of theaters, musicals, variety, etc. for a thomann power-saving replacement to halogen lights. With the adjustable color temperature of 2800 - 6400 kelvin leads the Octagon theater LED Spot in a whole new league of lights. The Units can be operated by DMX-512, or directly on the device on the black / thomann white LED display. Technical details: light source 18x 1W high power LED cool white (ca. 6400 K) + 18x 1W high power LED warm white (2800 K), continuously adjustable color temperature of 2800-6400 K, angle of approximately 36 ° Control: DMX 512 (5 thomann channels), automatic mode, stand-alone mode (adjustable color temperature), set LED display for all important functions, DMX input and output: 3 pin XLR, Power supply: 110 - 230V AC 50/60 Hz, max. Current consumption: 42 W, Dimensions: 21,5 x 21,5 x 14 cm, (incl. Screws thomann and Bracket: 21,5 cm x 30,1 cm x 24,8 cm), Weight: 4,02 kg, incl. Barndoor</p>
+              </div>
+              <div class="tab-pane fade " id="review">
+                <div class="aa-product-review-area">
+                  <h4>2 Reviews for Stairville Octagon Theatre CW / WW 36x1W</h4>
+                  <ul class="aa-review-nav">
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="@routes.Assets.versioned("img/equipment/donald_trump.jpg")" alt="DT image">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><strong>Donald Trump</strong> - <span>November 9, 2016</span></h4>
+                          <div class="aa-product-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                          </div>
+                          <p>I will use these for lighting on my HUGE wall for the boarder of Mexico. Mark my words!</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="@routes.Assets.versioned("img/equipment/kermit.jpg")" alt="kermit image">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><strong>Kermit The Frog</strong> - <span>Septmber 12, 2016</span></h4>
+                          <div class="aa-product-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                          </div>
+                          <p>Great product.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <h4>Add a review</h4>
+                  <div class="aa-your-rating">
+                    <p>Your Rating</p>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                  </div>
+                  <!-- review form -->
+                  <form action="" class="aa-review-form">
+                    <div class="form-group">
+                      <label for="message">Your Review</label>
+                      <textarea class="form-control" rows="3" id="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="">
+                    </div>
+
+                    <button type="submit" class="btn btn-default aa-review-submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Related product -->
+          <div class="aa-product-related-item">
+            <h3>Related Products</h3>
+            <ul class="aa-product-catg aa-related-item-slider">
+              <!-- start single product item -->
+              <li>
+                <figure>
+                  <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/man/polo-shirt-2.png")" alt="polo shirt img"></a>
+                  <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                  <figcaption>
+                    <h4 class="aa-product-title"><a href="#">Light 7</a></h4>
+                    <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                  </figcaption>
+                </figure>
+                <div class="aa-product-hvr-content">
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                  <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                </div>
+                <!-- product badge -->
+                <span class="aa-badge aa-sale" href="#">SALE!</span>
+              </li>
+              <!-- start single product item -->
+              <li>
+                <figure>
+                  <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/women/girl-2.png")" alt="polo shirt img"></a>
+                  <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                  <figcaption>
+                    <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                    <span class="aa-product-price">$45.50</span>
+                  </figcaption>
+                </figure>
+                <div class="aa-product-hvr-content">
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                  <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                </div>
+                <!-- product badge -->
+                <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+              </li>
+              <!-- start single product item -->
+              <li>
+                <figure>
+                  <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/man/t-shirt-1.png")" alt="polo shirt img"></a>
+                  <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                </figure>
+                <figcaption>
+                  <h4 class="aa-product-title"><a href="#">Light 8</a></h4>
+                  <span class="aa-product-price">$45.50</span>
+                </figcaption>
+                <div class="aa-product-hvr-content">
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                  <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                </div>
+                <!-- product badge -->
+                <span class="aa-badge aa-hot" href="#">HOT!</span>
+              </li>
+            </ul>
+            <!-- quick view modal -->
+            <div class="modal fade" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="row">
+                      <!-- Modal view slider -->
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="aa-product-view-slider">
+                          <div class="simpleLens-gallery-container" id="demo-1">
+                            <div class="simpleLens-container">
+                              <div class="simpleLens-big-image-container">
+                                <a class="simpleLens-lens-image" data-lens-image="@routes.Assets.versioned("img/view-slider/large/polo-shirt-1.png")">
+                                  <img src="@routes.Assets.versioned("img/view-slider/medium/polo-shirt-1.png")" class="simpleLens-big-image">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="simpleLens-thumbnails-container">
+                              <a href="#" class="simpleLens-thumbnail-wrapper" data-lens-image="img/view-slider/large/polo-shirt-1.png" data-big-image="img/view-slider/medium/polo-shirt-1.png">
+                                <img src="img/view-slider/thumbnail/polo-shirt-1.png">
+                              </a>
+                              <a href="#" class="simpleLens-thumbnail-wrapper" data-lens-image="img/view-slider/large/polo-shirt-3.png" data-big-image="img/view-slider/medium/polo-shirt-3.png">
+                                <img src="img/view-slider/thumbnail/polo-shirt-3.png">
+                              </a>
+
+                              <a href="#" class="simpleLens-thumbnail-wrapper" data-lens-image="img/view-slider/large/polo-shirt-4.png" data-big-image="img/view-slider/medium/polo-shirt-4.png">
+                                <img src="img/view-slider/thumbnail/polo-shirt-4.png">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal view content -->
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="aa-product-view-content">
+                          <h3>Light 9</h3>
+                          <div class="aa-price-block">
+                            <span class="aa-product-view-price">$34.99</span>
+                            <p class="aa-product-avilability">Avilability: <span>In stock</span></p>
+                          </div>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae
+                            quod nulla porro quidem, itaque quis quaerat!</p>
+                          <h4>Size</h4>
+                          <div class="aa-prod-view-size">
+                            <a href="#">S</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                          </div>
+                          <div class="aa-prod-quantity">
+                            <form action="">
+                              <select name="" id="">
+                                  <option value="0" selected="1">1</option>
+                                  <option value="1">2</option>
+                                  <option value="2">3</option>
+                                  <option value="3">4</option>
+                                  <option value="4">5</option>
+                                  <option value="5">6</option>
+                                </select>
+                            </form>
+                            <p class="aa-prod-category">
+                              Category: <a href="#">Light 10</a>
+                            </p>
+                          </div>
+                          <div class="aa-prod-view-bottom">
+                            <a href="#" class="aa-add-to-cart-btn"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <a href="#" class="aa-add-to-cart-btn">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- / quick view modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- / product category -->
+
+
+  <!-- Subscribe section -->
+  <section id="aa-subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-subscribe-area">
+            <h3>Subscribe to our newsletter </h3>
+            <p>Sign up for exclusive offers</p>
+            <form action="" class="aa-subscribe-form">
+              <input type="email" name="" id="" placeholder="Enter your Email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Subscribe section -->
+
+ <!-- footer -->
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-top-area">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <h3>Main Menu</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="guitars.html">Guitars</a></li>
+                      <li><a href="drums.html">Drums</a></li>
+                      <li><a href="keyboards.html">Keyboards</a></li>
+                      <li><a href="events.html">Events</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Extra Links</h3>
+                      <ul class="aa-footer-nav">
+                  
+                        <li><a href="Amps.html">Amps</a></li>
+                        <li><a href="Lighting.html">Lighting</a></li>
+                          <li><a href="Mics.html">Mics</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Contact Us</h3>
+                      <address>
+                        <p>ITT Music , Tallaght</p>
+                        <p><span class="fa fa-phone"></span>+1 2354635400</p>
+                        <p><span class="fa fa-envelope"></span>ITT Musicgmail.com</p>
+                      </address>
+                      <div class="aa-footer-social">
+                        <a href="https://www.facebook.com/login/"><span class="fa fa-facebook"></span></a>
+                        <a href="https://twitter.com/twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="fa fa-twitter"></span></a>
+                        <a href="https://plus.google.com/collections/featured"><span class="fa fa-google-plus"></span></a>
+                        <a href="https://www.youtube.com/"><span class="fa fa-youtube"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
+  <!-- / footer -->
+
+
+
+}

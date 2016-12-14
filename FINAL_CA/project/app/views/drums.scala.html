@@ -1,0 +1,549 @@
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Drums") {
+
+  <!-- wpf loader Two -->
+  <div id="wpf-loader-two">
+    <div class="wpf-loader-two-inner">
+      <span>Loading</span>
+    </div>
+  </div>
+  <!-- / wpf loader Two -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+  <header id="aa-header">
+    <!-- start header top  -->
+    <div class="aa-header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-top-area">
+              <!-- start header top left -->
+              <div class="aa-header-top-left">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header top  -->
+
+    <!-- start header bottom  -->
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <!-- logo  -->
+              <div class="aa-logo">
+                <!-- Text based logo -->
+                <a href="index.html">
+                  <span class="fa fa-shopping-cart"></span>
+                    <p>ITT<strong>Music</strong> <span>For All your Music Needs</span></p>
+       </a>
+                <!-- img based logo -->
+                <!-- <a href="index.html"><img src="@routes.Assets.versioned("img/logo.jpg")" alt="logo img"></a> -->
+              </div>
+              <!-- / logo  -->
+              <!-- cart box -->
+              <div class="aa-cartbox">
+                <a class="aa-cart-link" href="#">
+                  <span class="fa fa-shopping-basket"></span>
+                  <span class="aa-cart-title">SHOPPING CART</span>
+                  <span class="aa-cart-notify">2</span>
+                </a>
+                <div class="aa-cartbox-summary">
+                  <ul>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-2.jpg")" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-1.jpg")" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <span class="aa-cartbox-total-title">
+                        Total
+                      </span>
+                      <span class="aa-cartbox-total-price">
+                        $500
+                      </span>
+                    </li>
+                  </ul>
+                  <a class="aa-cartbox-checkout aa-primary-btn" href="#">Checkout</a>
+                </div>
+              </div>
+              <!-- / cart box -->
+              <!-- search box -->
+              <div class="aa-search-box">
+                <form action="">
+                  <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+              <!-- / search box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header bottom  -->
+  </header>
+  <!-- / header section -->
+
+  <!-- menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-area">
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="@routes.HomeController.index()">Home</a></li>
+              <li><a href="@routes.HomeController.guitars()">Guitars</a></li>
+              <li><a href="@routes.HomeController.drums()">Drums</a></li>
+              <li><a href="@routes.HomeController.keyboards()">Keyboards</a></li>
+              <li><a href="#">Equipment<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="@routes.HomeController.amps()">Amps</a></li>
+                  <li><a href="@routes.HomeController.mics()">Mics</a></li>
+                  <li><a href="@routes.HomeController.lighting()">Lighting</a></li>
+                </ul>
+              </li>
+              </li>
+              <li><a href="@routes.HomeController.events()">Events</a></li>
+              <li><a href="@routes.HomeController.contact()">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / menu -->
+
+  <!-- catg header banner section -->
+  <section id="aa-catg-head-banner">
+    <img src="@routes.Assets.versioned("img/Drums/image-L5.jpg")" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+      <div class="container">
+        <div class="aa-catg-head-banner-content">
+          <h2>Drums</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / catg header banner section -->
+
+  <!-- product category -->
+  <section id="aa-product-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-product-details-area">
+            <div class="aa-product-details-content">
+              <div class="row">
+                <!-- Modal view slider -->
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                  <div class="aa-product-view-slider">
+                    <div id="demo-1" class="simpleLens-gallery-container">
+                      <div class="simpleLens-container">
+                        <div class="simpleLens-big-image-container">
+                          <a data-lens-image="@routes.Assets.versioned("img/Drums/Drums1.jpg")" class="simpleLens-lens-image"><img src="@routes.Assets.versioned("img/Drums/Drums1.jpg")" class="simpleLens-big-image"></a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal view content -->
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                  <div class="aa-product-view-content">
+                    <h3>Drums</h3>
+                    <div class="aa-price-block">
+                      <span class="aa-product-view-price">€1234.99</span>
+                      <p class="aa-product-avilability">Avilability: <span>In stock</span></p>
+                    </div>
+                    <p>The unique Maple and Walnut shell composition coupled with the SONIClear™ bearing edge results in clear and focused rack toms, fat and dense floor toms, and bass drums with a balance of punch and boom.
+Shell Material:</p>
+
+                    <p class="aa-prod-category">
+                      Category: <a href="#">Drums</a>
+                    </p>
+                  </div>
+                  <div class="aa-prod-view-bottom">
+                    <a class="aa-add-to-cart-btn" href="#">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aa-product-details-bottom">
+            <ul class="nav nav-tabs" id="myTab2">
+              <li><a href="#description" data-toggle="tab">Description</a></li>
+              <li><a href="#review" data-toggle="tab">Reviews</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="description">
+                <p>The 1 up and 1 down set-up is designed for groove.
+				The unique Maple and Walnut shell composition coupled with the SONIClear™ bearing edge results in a clear and focused rack tom, a fat and dense floor tom, and a bass drum with a balance of punch and boom. With its 12” and 16” tom sizes, this set-up is a great starting point for building a custom configured kit. Individual drums in a variety of sizes are available in each finish.
+				<ul>
+              <h4>FEATURES:</h4>
+<li>The 1 and 1 down set-up allows players to position their ride closer in, yet still delivers big toms sounds for groove-based rock. The commonly preferred 12x9”, 16x16”, and 22x18” sizes and the availability of a wide range of component sizes allow players to easily add to this kit to create their ideal set-up.</li>
+<li>The Maple and Walnut hybrid shell produces a strong attack and a rich tone that projects well in live settings and tracks perfectly in the studio. It’s the classic Saturn sound.</li>
+<li>The SONIClear™ bearing edge simplifies the tuning process and enhances tone and tuning range</li>
+                </ul>
+				<ul>
+				<h4>Specs</h4>
+				<li>22"X18", 12"X09", 16"X16"</li>
+				<li>Maple and Walnut Hybrid Shell</li>
+				<li>7ply 7.5mm Bass Drum Shells 7ply 6.15mm Tom & Snare Shells</li>
+				<li>SONIClear™ Tom Suspension</li>
+				<li>Flat Black Maple Burl</li>
+				<li>Black Chrome Hardware</li>
+				<li>SONIClear™ Floor Tom Feet</li>
+				<li>Low-Contact Bass Drum Claws</li>
+				<li>Memory-Mark Bass Drum Spurs</li>
+				<li>2.3mm Power Hoops</li>
+				<li>SONIClear™ Bearing Edge</li>
+
+
+              </div>
+              <div class="tab-pane fade " id="review">
+                <div class="aa-product-review-area">
+                  <h4>2 Reviews for Drums</h4>
+                  <ul class="aa-review-nav">
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="@routes.Assets.versioned("img/Drums/john-bonham-bbc_-6-music_thumb.jpg")" alt="girl image">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><strong>John Bonham</strong> - <span>September26, 1977</span></h4>
+                          <div class="aa-product-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                          </div>
+                          <p>I remember in the early days when we played six nights a week for a month and I was doing my long drum solo every night. My hands were covered in blisters.
+</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="@routes.Assets.versioned("img/Drums/keith-moon.png")" alt="girl image">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><strong>Keith Moon</strong> - <span>March 26, 1971</span></h4>
+                          <div class="aa-product-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                          </div>
+                          <p>I told people I was a drummer before I even had a set, I was a mental drummer.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <h4>Add a review</h4>
+                  <div class="aa-your-rating">
+                    <p>Your Rating</p>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                  </div>
+                  <!-- review form -->
+                  <form action="" class="aa-review-form">
+                    <div class="form-group">
+                      <label for="message">Your Review</label>
+                      <textarea class="form-control" rows="3" id="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="">
+                    </div>
+
+                    <button type="submit" class="btn btn-default aa-review-submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Related product -->
+                <div class="aa-product-related-item">
+            <h3>Related Products</h3>
+            <ul class="aa-product-catg aa-related-item-slider">
+              <!-- start single product item -->
+              <li>
+                <figure>
+                  <a class="aa-product-img" href="drums.html"><img src="@routes.Assets.versioned("img/Drums/image-L5.jpg")" alt="drums img"></a>
+
+                  <figcaption>
+                    <h4 class="aa-product-title"><a href="drums.html">Drums</a></h4>
+                    <span class="aa-product-price">€1234.99</span><span class="aa-product-price"><del>$1500.00</del></span>
+                  </figcaption>
+                </figure>
+				  <div class="aa-product-hvr-content">
+
+
+                  </div>
+                <div class="aa-product-hvr-content">
+
+
+                  </div>
+                <!-- product badge -->
+                <span class="aa-badge aa-sale" href="drums.html">SALE!</span>
+              </li>
+			         <li>
+                <figure>
+                  <a class="aa-product-img" href="keyboards.html"><img src="@routes.Assets.versioned("img/Keyboards/1234.jpg")" alt="keyboards img"></a>
+
+                  <figcaption>
+                    <h4 class="aa-product-title"><a href="#">Keyboards</a></h4>
+                    <span class="aa-product-price">€400.99</span><span class="aa-product-price"><del>€1500.00</del></span>
+                  </figcaption>
+                </figure>
+				  <div class="aa-product-hvr-content">
+
+
+                </div>
+                <div class="aa-product-hvr-content">
+
+
+</div>
+                <!-- product badge -->
+                <span class="aa-badge aa-sale" href="#">SALE!</span>
+              </li>
+			         <li>
+                <figure>
+                  <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/Guitars/_largethumb_PGG-200_VS.jpg")" alt="drums img"></a>
+
+                  <figcaption>
+                    <h4 class="aa-product-title"><a href="#">Drums</a></h4>
+                    <span class="aa-product-price">€1234.99</span><span class="aa-product-price"><del>$1500.00</del></span>
+                  </figcaption>
+                </figure>
+                <div class="aa-product-hvr-content">
+
+
+                   </div>
+                <!-- product badge -->
+                <span class="aa-badge aa-sale" href="#">SALE!</span>
+              </li>
+
+
+            </ul>
+            <!-- quick view modal -->
+            <div class="modal fade" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="row">
+                      <!-- Modal view slider -->
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="aa-product-view-slider">
+                          <div class="simpleLens-gallery-container" id="demo-1">
+                            <div class="simpleLens-container">
+                              <div class="simpleLens-big-image-container">
+                                <a class="simpleLens-lens-image" data-lens-image="@routes.Assets.versioned("img/Drums/image-L5.jpg")">
+                                  <img src="@routes.Assets.versioned("img/Drums/image-L5.jpg")" class="simpleLens-big-image">
+                                </a>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal view content -->
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="aa-product-view-content">
+                          <h3>Keyboards</h3>
+                          <div class="aa-price-block">
+                            <span class="aa-product-view-price">€434.99</span>
+                            <p class="aa-product-avilability">Avilability: <span>In stock</span></p>
+                          </div>
+                          <p>The Casio CDP-220R is an 88-key scaled hammer action keyboard with improved sound quality and piano feel. Designed and engineered to help you sound your best, this model has undergone extensive upgrades to enable greater creativity, connectivity and control. This package gives you a complete setup, including the Casio CDP-220R (an upgraded version of the CDP-200R), Casio CS44 stand, Casio SP-3 pedal, HP-170 headphones and a Gear4music piano bench with storage.</p>
+
+
+                          <div class="aa-prod-quantity">
+                            <form action="">
+                              <select name="" id="">
+                                  <option value="0" selected="1">1</option>
+                                  <option value="1">2</option>
+                                  <option value="2">3</option>
+                                  <option value="3">4</option>
+                                  <option value="4">5</option>
+                                  <option value="5">6</option>
+                                </select>
+                            </form>
+                            <p class="aa-prod-category">
+                              Category: <a href="keyboards.html">Keyboards</a>
+                            </p>
+                          </div>
+                          <div class="aa-prod-view-bottom">
+                            <a href="#" class="aa-add-to-cart-btn"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <a href="#" class="aa-add-to-cart-btn">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- / quick view modal -->
+          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- / quick view modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- / product category -->
+
+
+  <!-- Subscribe section -->
+  <section id="aa-subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-subscribe-area">
+            <h3>Subscribe our newsletter </h3>
+            <p>Full of details on Exciting Deals and Products We have at ITT Music</p>
+            <form action="" class="aa-subscribe-form">
+              <input type="email" name="" id="" placeholder="Enter your Email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Subscribe section -->
+
+ <!-- footer -->
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-top-area">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <h3>Main Menu</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="guitars.html">Guitars</a></li>
+                      <li><a href="drums.html">Drums</a></li>
+                      <li><a href="keyboards.html">Keyboards</a></li>
+                      <li><a href="events.html">Events</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Extra Links</h3>
+                      <ul class="aa-footer-nav">
+                  
+                        <li><a href="Amps.html">Amps</a></li>
+                        <li><a href="Lighting.html">Lighting</a></li>
+                          <li><a href="Mics.html">Mics</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Contact Us</h3>
+                      <address>
+                        <p>ITT Music , Tallaght</p>
+                        <p><span class="fa fa-phone"></span>+1 2354635400</p>
+                        <p><span class="fa fa-envelope"></span>ITT Musicgmail.com</p>
+                      </address>
+                      <div class="aa-footer-social">
+                        <a href="https://www.facebook.com/login/"><span class="fa fa-facebook"></span></a>
+                        <a href="https://twitter.com/twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="fa fa-twitter"></span></a>
+                        <a href="https://plus.google.com/collections/featured"><span class="fa fa-google-plus"></span></a>
+                        <a href="https://www.youtube.com/"><span class="fa fa-youtube"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
+  <!-- / footer -->
+
+
+
+}

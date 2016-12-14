@@ -1,0 +1,550 @@
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Microphones") {
+
+  <!-- wpf loader Two -->
+  <div id="wpf-loader-two">
+    <div class="wpf-loader-two-inner">
+      <span>Loading</span>
+    </div>
+  </div>
+  <!-- / wpf loader Two -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+  <header id="aa-header">
+    <!-- start header top  -->
+    <div class="aa-header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-top-area">
+              <!-- start header top left -->
+              <div class="aa-header-top-left">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header top  -->
+
+    <!-- start header bottom  -->
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <!-- logo  -->
+              <div class="aa-logo">
+                <!-- Text based logo -->
+                <a href="index.html">
+                  <span class="fa fa-shopping-cart"></span>
+                    <p>ITT<strong>Music</strong> <span>For All your Music Needs</span></p>
+        </a>
+                <!-- img based logo -->
+                <!-- <a href="index.html"><img src="@routes.Assets.versioned("img/logo.jpg")" alt="logo img"></a> -->
+              </div>
+              <!-- / logo  -->
+              <!-- cart box -->
+              <div class="aa-cartbox">
+                <a class="aa-cart-link" href="#">
+                  <span class="fa fa-shopping-basket"></span>
+                  <span class="aa-cart-title">SHOPPING CART</span>
+                  <span class="aa-cart-notify">2</span>
+                </a>
+                <div class="aa-cartbox-summary">
+                  <ul>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-2.jpg")" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-1.jpg")" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <span class="aa-cartbox-total-title">
+                        Total
+                      </span>
+                      <span class="aa-cartbox-total-price">
+                        $500
+                      </span>
+                    </li>
+                  </ul>
+                  <a class="aa-cartbox-checkout aa-primary-btn" href="#">Checkout</a>
+                </div>
+              </div>
+              <!-- / cart box -->
+              <!-- search box -->
+              <div class="aa-search-box">
+                <form action="">
+                  <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+              <!-- / search box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header bottom  -->
+  </header>
+  <!-- / header section -->
+
+  <!-- menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-area">
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="@routes.HomeController.index()">Home</a></li>
+              <li><a href="@routes.HomeController.guitars()">Guitars</a></li>
+              <li><a href="@routes.HomeController.drums()">Drums</a></li>
+              <li><a href="@routes.HomeController.keyboards()">Keyboards</a></li>
+              <li><a href="#">Equipment<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="@routes.HomeController.amps()">Amps</a></li>
+                  <li><a href="@routes.HomeController.mics()">Mics</a></li>
+                  <li><a href="@routes.HomeController.lighting()">Lighting</a></li>
+                </ul>
+              </li>
+              </li>
+              <li><a href="@routes.HomeController.events()">Events</a></li>
+              <li><a href="@routes.HomeController.contact()">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / menu -->
+
+  <!-- catg header banner section -->
+  <section id="aa-catg-head-banner">
+    <img src="@routes.Assets.versioned("img/equipment/microphone-header.jpg")" alt="microphone img">
+    <div class="aa-catg-head-banner-area">
+      <div class="container">
+        <div class="aa-catg-head-banner-content">
+          <h2>Mics</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / catg header banner section -->
+
+  <!-- product category -->
+  <section id="aa-product-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-product-details-area">
+            <div class="aa-product-details-content">
+              <div class="row">
+                <!-- Modal view slider -->
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                  <div class="aa-product-view-slider">
+                    <div id="demo-1" class="simpleLens-gallery-container">
+                      <div class="simpleLens-container">
+                        <div class="simpleLens-big-image-container">
+                          <a data-lens-image="@routes.Assets.versioned("img/equipment/Shure_SM58.jpg")" class="simpleLens-lens-image"><img src="@routes.Assets.versioned("img/equipment/Shure_SM58.jpg")" class="simpleLens-big-image"></a>
+                        </div>
+                      </div>
+                      <div class="simpleLens-thumbnails-container">
+                        <a data-big-image="@routes.Assets.versioned("img/equipment/Shure_SM58.jpg")" data-lens-image="@routes.Assets.versioned("img/equipment/Shure_SM58.jpg")" class="simpleLens-thumbnail-wrapper"
+                          href="#">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal view content -->
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                  <div class="aa-product-view-content">
+                    <h3>Shure SM 58</h3>
+                    <div class="aa-price-block">
+                      <span class="aa-product-view-price">€109.00</span>
+                      <p class="aa-product-avilability">Avilability: <span>In stock</span></p>
+                    </div>
+                    <p>Shure Sm58 Microphone, the most famous microphone in the world for more than 40 years!</p>
+
+                    <p class="aa-prod-category">
+                      Category: <a href="#">Equipment</a>
+                    </p>
+                  </div>
+                  <div class="aa-prod-view-bottom">
+                    <a class="aa-add-to-cart-btn" href="#">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aa-product-details-bottom">
+            <ul class="nav nav-tabs" id="myTab2">
+              <li><a href="#description" data-toggle="tab">Description</a></li>
+              <li><a href="#review" data-toggle="tab">Reviews</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="description">
+                <p>Shure's most famous microphone!
+  For more than 40 years, Shure's SM58 has been the "must have" microphone for musicians, producers, and sound-engineers around the world. No other mic in your mic box can match its legendary reputation for great sound and rugged dependability. With an SM58 on the stage, you can forget about the microphone and concentrate on your performance.</p>
+
+  <p>Engineered for great-sounding vocals
+  The SM58 features specially tuned midrange response for boosted presence in your vocal tracks. While some mics cause vocals to get lost in the mix, the SM58 cuts through the instrumental tracks and positions the singer right out in front. Your music will gain the crisp focus that separates the professionals from the hobbyists.</p>
+
+  <p>Special technology for quiet operation
+  Shure's unique spherical filter brings smoothness and clarity to both lead- and backing-vocals. Wind and breath sounds are minimized, cutting down on ambient noise that can ruin recorded tracks and possibly damage live sound equipment. A tried-and-true internal shockmount also cleans up your performance by reducing handling noise. Those loud creaks and pops that result from pulling the mic out of its clip or adjusting its position can be completely avoided. Plus, floor vibrations won't enter the signal stream when the SM58 is mounted on a stand. Clean tracks always sit better in the mix, giving them their own space and texture. You'll be surprised at what pops out of your performance once the unwanted noise is gone.</p>
+
+  <p>Unidirectional pickup
+  Live sound stages and recording studios both rely on good microphone isolation for quality results. If one audio source bleeds over into another, it's hard to know what to fix and how to fix it. Fortunately, Shure SM58s have a unidirectional, cardioid pickup pattern for outstanding aiming control. Since sounds outside the pickup pattern are automatically rejected, you can position the mic to only "hear" your intended audio source. In the studio, you'll have clean, separated tracks for faster editing. On stage, you can be sure your input levels are strong without worrying about feedback. Either way, your project just got a whole lot easier. Shure includes a 180-degree rotating mic clip to help you get perfect mic placement, every time.</p>
+
+  <p>Legendary durability
+  The SM58's tank-like durability has reached mythic status in the music world. Veteran rockers love to tell the tale of how they hammered the stage together with their SM58, then sang through the whole gig without missing a beat. You'll be a part of the legend when you grasp the perfectly balanced die-cast metal handle and raise the rigid steel mesh grille up to your lips. It's hard not to feel the weight of all that music history when you realize your favorite artists hefted that same handle, delivering their lyrics through that same mesh grille.</p>
+
+  <p>The drop test
+  Nostalgic sentiment is nice, but how about some cold, hard evidence The SM58 met and conquered Shure's famous "drop test," falling ten times from a height of ten feet with no drop in performance! We all know what happens at the live show. The energy is high, people are jumping around, and your mic stand is bound to get bumped. It's nice to know you can pick it up, dust it off, and get right back into the moment. Nothing will kill the vibe faster than telling the crowd to hang on a minute while you swap out equipment. With an SM58, you never have to stop!</p>
+
+  <p>Affordable quality
+  Shure knows their audience, and they priced the SM58 accordingly. At this musician-friendly price, you can outfit the whole stage without breaking your tour- or studio-budget. Use the savings to try and find other gear that performs as well as the SM58, if you can</p>
+
+              </div>
+              <div class="tab-pane fade " id="review">
+                <div class="aa-product-review-area">
+                  <h4>2 Reviews for Shure SM 58</h4>
+                  <ul class="aa-review-nav">
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="@routes.Assets.versioned("img/Howie.jpg")" alt="Howie Image">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><strong>Howie Lynch</strong> - <span>March 26, 2016</span></h4>
+                          <div class="aa-product-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                          </div>
+                          <p>Brilliant piece of equipment, wouldn't go to a gig without one!</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="@routes.Assets.versioned("img/Shane.jpg")" alt="Shane image">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><strong>Shane McCann</strong> - <span>Jul 18, 2016</span></h4>
+                          <div class="aa-product-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                          </div>
+                          <p>The Shure SM58 is definitley not scrap!</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <h4>Add a review</h4>
+                  <div class="aa-your-rating">
+                    <p>Your Rating</p>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                    <a href="#"><span class="fa fa-star-o"></span></a>
+                  </div>
+                  <!-- review form -->
+                  <form action="" class="aa-review-form">
+                    <div class="form-group">
+                      <label for="message">Your Review</label>
+                      <textarea class="form-control" rows="3" id="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="">
+                    </div>
+
+                    <button type="submit" class="btn btn-default aa-review-submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Related product -->
+          <div class="aa-product-related-item">
+            <h3>Related Products</h3>
+            <ul class="aa-product-catg aa-related-item-slider">
+              <!-- start single product item -->
+              <li>
+                <figure>
+                  <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/man/polo-shirt-2.png")" alt="polo shirt img"></a>
+                  <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                  <figcaption>
+                    <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
+                    <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                  </figcaption>
+                </figure>
+                <div class="aa-product-hvr-content">
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                  <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                </div>
+                <!-- product badge -->
+                <span class="aa-badge aa-sale" href="#">SALE!</span>
+              </li>
+              <!-- start single product item -->
+              <li>
+                <figure>
+                  <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/women/girl-2.png")" alt="polo shirt img"></a>
+                  <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                  <figcaption>
+                    <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                    <span class="aa-product-price">$45.50</span>
+                  </figcaption>
+                </figure>
+                <div class="aa-product-hvr-content">
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                  <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                </div>
+                <!-- product badge -->
+                <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
+              </li>
+              <!-- start single product item -->
+              <li>
+                <figure>
+                  <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/man/t-shirt-1.png")" alt="polo shirt img"></a>
+                  <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                </figure>
+                <figcaption>
+                  <h4 class="aa-product-title"><a href="#">T-Shirt</a></h4>
+                  <span class="aa-product-price">$45.50</span>
+                </figcaption>
+                <div class="aa-product-hvr-content">
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
+                  <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
+                </div>
+                <!-- product badge -->
+                <span class="aa-badge aa-hot" href="#">HOT!</span>
+              </li>
+            </ul>
+            <!-- quick view modal -->
+            <div class="modal fade" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="row">
+                      <!-- Modal view slider -->
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="aa-product-view-slider">
+                          <div class="simpleLens-gallery-container" id="demo-1">
+                            <div class="simpleLens-container">
+                              <div class="simpleLens-big-image-container">
+                                <a class="simpleLens-lens-image" data-lens-image="@routes.Assets.versioned("img/view-slider/large/polo-shirt-1.png")">
+                                  <img src="@routes.Assets.versioned("img/view-slider/medium/polo-shirt-1.png")" class="simpleLens-big-image">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="simpleLens-thumbnails-container">
+                              <a href="#" class="simpleLens-thumbnail-wrapper" data-lens-image="img/view-slider/large/polo-shirt-1.png" data-big-image="img/view-slider/medium/polo-shirt-1.png">
+                                <img src="img/view-slider/thumbnail/polo-shirt-1.png">
+                              </a>
+                              <a href="#" class="simpleLens-thumbnail-wrapper" data-lens-image="img/view-slider/large/polo-shirt-3.png" data-big-image="img/view-slider/medium/polo-shirt-3.png">
+                                <img src="img/view-slider/thumbnail/polo-shirt-3.png">
+                              </a>
+
+                              <a href="#" class="simpleLens-thumbnail-wrapper" data-lens-image="img/view-slider/large/polo-shirt-4.png" data-big-image="img/view-slider/medium/polo-shirt-4.png">
+                                <img src="img/view-slider/thumbnail/polo-shirt-4.png">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal view content -->
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="aa-product-view-content">
+                          <h3>T-Shirt</h3>
+                          <div class="aa-price-block">
+                            <span class="aa-product-view-price">$34.99</span>
+                            <p class="aa-product-avilability">Avilability: <span>In stock</span></p>
+                          </div>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, veritatis quae repudiandae
+                            quod nulla porro quidem, itaque quis quaerat!</p>
+                          <h4>Size</h4>
+                          <div class="aa-prod-view-size">
+                            <a href="#">S</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                          </div>
+                          <div class="aa-prod-quantity">
+                            <form action="">
+                              <select name="" id="">
+                                  <option value="0" selected="1">1</option>
+                                  <option value="1">2</option>
+                                  <option value="2">3</option>
+                                  <option value="3">4</option>
+                                  <option value="4">5</option>
+                                  <option value="5">6</option>
+                                </select>
+                            </form>
+                            <p class="aa-prod-category">
+                              Category: <a href="#">Polo T-Shirt</a>
+                            </p>
+                          </div>
+                          <div class="aa-prod-view-bottom">
+                            <a href="#" class="aa-add-to-cart-btn"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <a href="#" class="aa-add-to-cart-btn">View Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- / quick view modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- / product category -->
+
+
+  <!-- Subscribe section -->
+  <section id="aa-subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-subscribe-area">
+            <h3>Subscribe to our newsletter </h3>
+            <p>Sign up for exclusive offers.</p>
+            <form action="" class="aa-subscribe-form">
+              <input type="email" name="" id="" placeholder="Enter your Email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Subscribe section -->
+
+ <!-- footer -->
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-top-area">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <h3>Main Menu</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="guitars.html">Guitars</a></li>
+                      <li><a href="drums.html">Drums</a></li>
+                      <li><a href="keyboards.html">Keyboards</a></li>
+                      <li><a href="events.html">Events</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Extra Links</h3>
+                      <ul class="aa-footer-nav">
+                  
+                        <li><a href="Amps.html">Amps</a></li>
+                        <li><a href="Lighting.html">Lighting</a></li>
+                          <li><a href="Mics.html">Mics</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Contact Us</h3>
+                      <address>
+                        <p>ITT Music , Tallaght</p>
+                        <p><span class="fa fa-phone"></span>+1 2354635400</p>
+                        <p><span class="fa fa-envelope"></span>ITT Musicgmail.com</p>
+                      </address>
+                      <div class="aa-footer-social">
+                        <a href="https://www.facebook.com/login/"><span class="fa fa-facebook"></span></a>
+                        <a href="https://twitter.com/twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="fa fa-twitter"></span></a>
+                        <a href="https://plus.google.com/collections/featured"><span class="fa fa-google-plus"></span></a>
+                        <a href="https://www.youtube.com/"><span class="fa fa-youtube"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
+  <!-- / footer -->
+
+
+
+}

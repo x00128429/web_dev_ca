@@ -1,0 +1,455 @@
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Events") {
+
+  <!-- wpf loader Two -->
+  <div id="wpf-loader-two">
+    <div class="wpf-loader-two-inner">
+      <span>Loading</span>
+    </div>
+  </div>
+  <!-- / wpf loader Two -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+  <header id="aa-header">
+
+    <!-- start header bottom  -->
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <!-- logo  -->
+              <div class="aa-logo">
+                <!-- Text based logo -->
+                <a href="index.html">
+                  <span class="fa fa-shopping-cart"></span>
+                    <p>ITT<strong>Music</strong> <span>For All your Music Needs</span></p>
+        </a>
+              </div>
+              <!-- / logo  -->
+              <!-- cart box -->
+              <div class="aa-cartbox">
+                <a class="aa-cart-link" href="#">
+                  <span class="fa fa-shopping-basket"></span>
+                  <span class="aa-cart-title">SHOPPING CART</span>
+                  <span class="aa-cart-notify">2</span>
+                </a>
+                <div class="aa-cartbox-summary">
+                  <ul>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-2.jpg")" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-1.jpg")" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <span class="aa-cartbox-total-title">
+                        Total
+                      </span>
+                      <span class="aa-cartbox-total-price">
+                        $500
+                      </span>
+                    </li>
+                  </ul>
+                  <a class="aa-cartbox-checkout aa-primary-btn" href="#">Checkout</a>
+                </div>
+              </div>
+              <!-- / cart box -->
+              <!-- search box -->
+              <div class="aa-search-box">
+                <form action="">
+                  <input type="text" name="" id="" placeholder="Search here ex. 'Concerts' ">
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+              <!-- / search box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header bottom  -->
+  </header>
+  <!-- / header section -->
+  <!-- menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-area">
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="@routes.HomeController.index()">Home</a></li>
+              <li><a href="@routes.HomeController.guitars()">Guitars</a></li>
+              <li><a href="@routes.HomeController.drums()">Drums</a></li>
+              <li><a href="@routes.HomeController.keyboards()">Keyboards</a></li>
+              <li><a href="#">Equipment<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="@routes.HomeController.amps()">Amps</a></li>
+                  <li><a href="@routes.HomeController.mics()">Mics</a></li>
+                  <li><a href="@routes.HomeController.lighting()">Lighting</a></li>
+                </ul>
+              </li>
+              </li>
+              <li><a href="@routes.HomeController.events()">Events</a></li>
+              <li><a href="@routes.HomeController.contact()">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / menu -->
+
+  <!-- header banner section -->
+  <section id="aa-catg-head-banner">
+    <img src="@routes.Assets.versioned("img/shane/event5.jpg")" alt="Concert banner img">
+    <div class="aa-catg-head-banner-area">
+      <div class="container">
+        <div class="aa-catg-head-banner-content">
+          <h2>EVENTS</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /header banner section -->
+
+  <!-- Event Archive -->
+  <section id="aa-blog-archive">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-blog-archive-area">
+            <div class="row">
+              <div class="col-md-9">
+                <!-- Event details -->
+                <div class="aa-blog-content aa-blog-details">
+                  <article class="aa-blog-content-single">
+                    <h2><a href="#">Aerosmith</a></h2>
+                    <figure class="aa-blog-img">
+                      <a href="@routes.Assets.versioned("img/shane/event6.jpg")"><img src="@routes.Assets.versioned("img/shane/event6.jpg")" alt="concert img"></a>
+                    </figure>
+                    <p>Aerosmith are possibly the definitive US rock'n'roll band still playing today. Their career statistics
+                      are truly incredible, from the fact that they have sold over 100 million albums across the world to
+                      the fact that they have won countless leading music awards. With their diehard fans, they are still
+                      going strong after 30 years. Their sound still remains relevant and creatively strong, and many believe
+                      that their accomplishments as a band have set the standard for both commercial and artistic achievement
+                      within the music business. Certainly they have stood the test of time, but they have also defeated
+                      their own demons, including brushes with substance abuse.</p>
+
+                    <p>The band started in 1969, in New Hampshire, USA. Singer and drummer Steve Tyler checked out a local band
+                      called The Jam Band, with Tom Hamilton and Joe Perry. Although he was currently in another band, Tyler
+                      decided then that his future lay with this creative duo, citing their incredible energy and his classic
+                      influences. Tyler's friend Joey Kramer was brought in on drums, followed by Brad Whitford on guitar,
+                      and Aerosmith was born. Their first album - Aerosmith - was released in 1973, with Dream On as the
+                      album's single release. The band toured widely, supporting other bands such as The Kinks. Their second
+                      album was Get Your Wings in 1974, which spent 86 weeks in the charts. Their watershed release was Toys
+                      In The Attic, a breakthrough that would sell millions. This was followed by Rocks in 1976 and the hits
+                      came rapidly, including Walk This Way, Sweet Emotion and Last Child.</p>
+
+                    <p>The band have played sell-out tours all around the world, including Europe, Japan, Australia, North America,
+                      Israel and South America. They have toured the globe over 30 times. I Don't Wanna Miss A Thing was
+                      their first No. 1 hit at the end of the nineties, and the band joined the Rock 'n Roll Hall of Fame
+                      in 2001. At this point they had won over 55 top musical awards and were voted as MTV Icons.</p>
+
+                    <h1>3Arena - Dublin</h1>
+                    <p>The 2017 European Farewell Tour comes to 3Arena on 14 June 2017. Tickets on sale this Friday at 09:00.</p>
+                    <div class="blog-single-bottom">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="blog-single-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <!-- Event sidebar -->
+              <div class="col-md-3">
+                <aside class="aa-blog-sidebar">
+                  <div class="aa-sidebar-widget">
+                    <h3>Instruments</h3>
+                    <ul class="aa-catg-nav">
+                      <li><a href="guitars.html">Guitars</a></li>
+                      <li><a href="drums.html">Drums</a></li>
+                      <li><a href="keyboard.html">Keyboards</a></li>
+                    </ul>
+                  </div>
+                  <div class="aa-sidebar-widget">
+                    <h3>Lucky Pick</h3>
+                    <div class="aa-recently-views">
+                      <ul>
+                        <li>
+                          <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/shane/guitar3.jpg")" alt="img"></a>
+                          <div class="aa-cartbox-info">
+                            <h4><a href="guitars.html">Electric Guitar</a></h4>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-1.jpg")" alt="img"></a>
+                          <div class="aa-cartbox-info">
+                            <h4><a href="#">Drum1</a></h4>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="aa-cartbox-img" href="#"><img src="@routes.Assets.versioned("img/woman-small-2.jpg")" alt="img"></a>
+                          <div class="aa-cartbox-info">
+                            <h4><a href="#">Keyboard1</a></h4>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Event Archive -->
+
+  <!-- Event Archive -->
+  <section id="aa-blog-archive">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-blog-archive-area">
+            <div class="row">
+              <div class="col-md-9">
+                <!-- Event details -->
+                <div class="aa-blog-content aa-blog-details">
+                  <article class="aa-blog-content-single">
+                    <h2><a href="#">Iron Maiden</a></h2>
+                    <figure class="aa-blog-img">
+                      <a href="@routes.Assets.versioned("img/shane/event7.jpg")"><img src="@routes.Assets.versioned("img/shane/event7.jpg")" alt="Iron Maiden img"></a>
+                    </figure>
+                    <p>Iron Maiden was formed in 1976 by bass player Steve Harris and it was four years before they released
+                      their first, self-titled, album. Iron Maiden was a hit in the UK, largely thanks to the successful
+                      single, Running Free. The band's second album, Killers, released in 1981, had a harder edge than their
+                      first and was also a UK hit. Original vocalist, Paul Di'Anno, left the band in 1982 and was replaced
+                      with Bruce Dickinson who completed what is now considered to be Iron Maiden's classic line-up. The
+                      same year saw the release of the seminal rock album, Number of the Beast, which was the band's first
+                      worldwide hit and featured such classic tracks as Hallowed Be Thy Name and the album's title track.
+                      Iron Maiden took full advantage of their new found global fame and quickly put out their next album,
+                      Piece of Mind, before going on two major tours.</p>
+
+                    <p>Iron Maiden were on a roll and they released Powerslave, another huge album, in 1983. The band toured
+                      Powerslave for 11 months which resulted in 1985's double live album, Live After Death. Their next two
+                      releases were both concept albums, Somewhere in Time from 1986 and 1988's Seventh Son of a Seventh
+                      Son. Seventh Son was widely considered to be the band's best album since Number of the Beast and spawned
+                      the successful singles, The Evil That Men Do and The Clairvoyant.</p>
+
+                    <p>After a relatively unsuccessful spell with Blaze Bayley as their singer, Iron Maiden welcomed Dickinson
+                      back in 1999 and a new album, Brave New World, hit the charts in 2000. In 2005 they undertook a huge
+                      tour as co-headliners with Black Sabbath and they have continued to tour and release new albums ever
+                      since.</p>
+
+                    <h1>3Arena - Dublin</h1>
+                    <p>Iron Maiden Play the 3Arena on Saturday the 6th of May 2017 for one night only. Tickets are on sale now
+                      from
+                      <a href="http://www.ticketmaster.ie/Iron-Maiden-tickets/artist/735341?tm_link=tm_music_g3&hot_ticket_brand=">
+                    ticketmaster</a> with tickets starting from €73.50.</p>
+
+                    <div class="blog-single-bottom">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="blog-single-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <!-- Event Archive -->
+              <section id="aa-blog-archive">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="aa-blog-archive-area">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <!-- Event details -->
+                            <div class="aa-blog-content aa-blog-details">
+                              <article class="aa-blog-content-single">
+                                <h2><a href="#">Olly Murs</a></h2>
+                                <figure class="aa-blog-img">
+                                  <a href="@routes.Assets.versioned("img/shane/event8.jpg")"><img src="@routes.Assets.versioned("img/shane/event8.jpg")" alt="Olly Murs img"></a>
+                                </figure>
+                                <p>Since bursting on to the music scene as runner-up on the 2009 series of The X Factor, pop
+                                  singer and songwriter Olly Murs has achieved an incredible level of success. Undeniably
+                                  much loved in the UK and Ireland, Olly has undertaken several tours to showcase his talents.
+                                  He began with The X Factor tour in early 2010, followed by a theatre tour in 2011 and has
+                                  gone on to perform to huge audiences all over the world. Over 150,000 fans had the chance
+                                  to see Olly at his 2013 UK and Ireland arena tour. Olly gained still more international
+                                  recognition when he teamed up with One Direction, opening the show for them on the US leg
+                                  of their very first international tour.</p>
+
+                                <p>Born in Essex, Olly lived with his parents, sister and twin brother. Having played semi-professionally,
+                                  a career in football seemed likely until an injury ended this dream. However, having unsuccessfully
+                                  auditioned twice for The X Factor, it was third time lucky for Olly and he embarked on
+                                  a life-changing journey. His performance of the Stevie Wonder hit, Superstition, would
+                                  see him become runner-up in 2009. Olly began work on his debut album almost immediately.
+                                  His debut single, Please Don t Let Me Go, shot straight to the top of the charts in September
+                                  2010, and his second hit Thinking Of Me reached number four in November of the same year.
+                                  His self-titled album hit the shops that same month, debuting at number two.</p>
+
+                                <p>Aside from his hugely successful music career, Olly has also demonstrated a talent for television,
+                                  presenting initially on the spin-off show The Xtra Factor before returning as a guest mentor
+                                  in The X Factor in 2013. An ITV2 documentary, Life On Murs, followed him on his sell-out
+                                  2012 tour and offered a unique insight into Olly’s world. A keen Manchester United fan,
+                                  Olly is also a regular participant in various charity soccer events.</p>
+
+                                <h1>3Arena - Dublin</h1>
+                                <p>Olly Murs Plays the 3Arena on Monday the 3rd of April 2017 for one night only. Tickets are
+                                  on sale now from
+                                  <a href="http://www.ticketmaster.ie/Olly-Murs-tickets/artist/1418865?tm_link=edp_Artist_Image">
+                                ticketmaster</a> with tickets starting from €39.05.</p>
+
+                                <div class="blog-single-bottom">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                      <div class="blog-single-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                     <!-- Subscribe section -->
+  <section id="aa-subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-subscribe-area">
+            <h3>Subscribe our newsletter </h3>
+   <p>Full of details on Exciting Deals and Products We have at ITT Music</p>
+            <form action="" class="aa-subscribe-form">
+              <input type="email" name="" id="" placeholder="Enter your Email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Subscribe section -->
+
+                         <!-- footer -->
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-top-area">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <h3>Main Menu</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="guitars.html">Guitars</a></li>
+                      <li><a href="drums.html">Drums</a></li>
+                      <li><a href="keyboards.html">Keyboards</a></li>
+                      <li><a href="events.html">Events</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Extra Links</h3>
+                      <ul class="aa-footer-nav">
+                  
+                        <li><a href="Amps.html">Amps</a></li>
+                        <li><a href="Lighting.html">Lighting</a></li>
+                          <li><a href="Mics.html">Mics</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Contact Us</h3>
+                      <address>
+                        <p>ITT Music , Tallaght</p>
+                        <p><span class="fa fa-phone"></span>+1 2354635400</p>
+                        <p><span class="fa fa-envelope"></span>ITT Musicgmail.com</p>
+                      </address>
+                      <div class="aa-footer-social">
+                        <a href="https://www.facebook.com/login/"><span class="fa fa-facebook"></span></a>
+                        <a href="https://twitter.com/twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="fa fa-twitter"></span></a>
+                        <a href="https://plus.google.com/collections/featured"><span class="fa fa-google-plus"></span></a>
+                        <a href="https://www.youtube.com/"><span class="fa fa-youtube"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
+  <!-- / footer -->
+                      
+
+
+}

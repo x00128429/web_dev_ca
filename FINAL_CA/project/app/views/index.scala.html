@@ -1,0 +1,477 @@
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Home") {
+
+     <!-- wpf loader Two -->
+  <div id="wpf-loader-two">
+    <div class="wpf-loader-two-inner">
+      <span>Loading</span>
+    </div>
+  </div>
+  <!-- / wpf loader Two -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- start header bottom  -->
+  <header id="aa-header">
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <!-- logo  -->
+              <div class="aa-logo">
+                <!-- Text based logo -->
+                <a href="@routes.HomeController.index()">
+                  <span class="assets/img/shane.jpg"></span>
+                    <p>ITT<strong>Music</strong> <span>For All your Music Needs</span></p>
+       </a>
+              </div>
+              <!-- / logo  -->
+              <!-- cart box -->
+              <div class="aa-cartbox">
+                <a class="aa-cart-link" href="#">
+                  <span class="fa fa-shopping-basket"></span>
+                  <span class="aa-cart-title">SHOPPING CART</span>
+                  <span class="aa-cart-notify">2</span>
+                </a>
+                <div class="aa-cartbox-summary">
+                  <ul>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-1.jpg" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <span class="aa-cartbox-total-title">
+                        Total
+                      </span>
+                      <span class="aa-cartbox-total-price">
+                        $500
+                      </span>
+                    </li>
+                  </ul>
+                  <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
+                </div>
+              </div>
+              <!-- / cart box -->
+              <!-- search box -->
+              <div class="aa-search-box">
+                <form action="">
+                  <input type="text" name="" id="" placeholder="Search here ex. 'Concerts' ">
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+              <!-- / search box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header bottom  -->
+  </header>
+  <!-- / header section -->
+  <!-- menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-area">
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="@routes.HomeController.index()">Home</a></li>
+              <li><a href="@routes.HomeController.guitars()">Guitars</a></li>
+              <li><a href="@routes.HomeController.drums()">Drums</a></li>
+              <li><a href="@routes.HomeController.keyboards()">Keyboards</a></li>
+              <li><a href="#">Equipment<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="@routes.HomeController.amps()">Amps</a></li>
+                  <li><a href="@routes.HomeController.mics()">Mics</a></li>
+                  <li><a href="@routes.HomeController.lighting()">Lighting</a></li>
+                </ul>
+              </li>
+              </li>
+              <li><a href="@routes.HomeController.events()">Events</a></li>
+              <li><a href="@routes.HomeController.contact()">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / menu -->
+  <!-- Start slider -->
+  <section id="aa-slider">
+    <div class="aa-slider-area">
+      <div id="sequence" class="seq">
+        <ul class="seq-canvas">
+          <!-- single slide item -->
+          <li>
+            <div class="seq-model">
+              <img data-seq src="@routes.Assets.versioned("img/slider/Guitar1.jpg")" alt="Guitar Slide Image" />
+            </div>
+            <div class="seq-title">
+              <span data-seq>Go to guitars</span>
+              <h2 data-seq>GUITARS</h2>
+              <p data-seq>Shop for the biggest brands at the lowest prices</p>
+              <a data-seq href="guitars.html" class="aa-shop-now-btn aa-secondary-btn">SHOP FOR GUITARS</a>
+            </div>
+          </li>
+          <!-- single slide item -->
+          <li>
+            <div class="seq-model">
+              <img data-seq src="@routes.Assets.versioned("img/slider/Drum1.jpg")" alt="Drum Slide Image" />
+            </div>
+            <div class="seq-title">
+              <span data-seq>Go to Drums</span>
+              <h2 data-seq>DRUMS</h2>
+              <p data-seq>Shop for the biggest brands at the lowest prices</p>
+              <a data-seq href="drums.html" class="aa-shop-now-btn aa-secondary-btn">SHOP FOR DRUMS</a>
+            </div>
+          </li>
+          <!-- single slide item -->
+          <li>
+            <div class="seq-model">
+              <img data-seq src="@routes.Assets.versioned("img/slider/Keyboard1.jpg")" alt="Keyboard Slide image" />
+            </div>
+            <div class="seq-title">
+              <span data-seq>Keyboards</span>
+              <h2 data-seq>KEYBOARDS</h2>
+              <p data-seq>Shop for the biggest brands at the lowest prices</p>
+              <a data-seq href="keyboards.html" class="aa-shop-now-btn aa-secondary-btn">SHOP FOR KEYBOARDS</a>
+            </div>
+          </li>
+          <!-- single slide item -->
+          <li>
+            <div class="seq-model">
+              <img data-seq src="@routes.Assets.versioned("img/slider/Event1.jpg")" alt="Event Slide Image" />
+            </div>
+            <div class="seq-title">
+              <span data-seq>Events</span>
+              <h2 data-seq><a href="events.html">GO TO EVENTS</a></h2>
+              <p data-seq>Shop for the biggest brands at the lowest prices</p>
+              <a data-seq href="http://www.ticketmaster.ie/" class="aa-shop-now-btn aa-secondary-btn">GO TO TICKETMASTER</a>
+            </div>
+          </li>
+        </ul>
+        <!-- slider navigation btn -->
+
+        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+          <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+          <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+        </fieldset>
+
+      </div>
+    </div>
+  </section>
+  <!-- / slider -->
+  <!-- Products section -->
+  <section id="aa-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="aa-product-area">
+              <div class="aa-product-inner">
+                <!--start prduct navigation -->
+                <ul class="nav nav-tabs aa-products-tab">
+
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <!-- Start men product category -->
+                  <div class="tab-pane fade in active" id="men">
+                    <ul class="aa-product-catg">
+                      <!-- start single product item -->
+
+
+                      <li>
+                        <figure>
+                          <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/shane/guitar3.jpg")" alt="Electric Guitar img"></a>
+                          <figcaption>
+                            <h4 class="aa-product-title"><a href="#">Electric Guitar</a></h4>
+                            <span class="aa-product-price">€349.99</span>
+                          </figcaption>
+                        </figure>
+                        <!-- product badge -->
+
+                      <!-- start single product item -->
+                      <li>
+                        <figure>
+                          <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/Keyboards/1234.jpg")" alt="polo shirt img"></a>
+                         <figcaption>
+                            <h4 class="aa-product-title"><a href="#">Keyboards</a></h4>
+                            <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- start single product item -->
+
+                      <!-- start single product item -->
+                      <li>
+                        <figure>
+                          <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/Drums/image-L5.jpg")" alt="polo shirt img"></a>
+                         <figcaption>
+                            <h4 class="aa-product-title"><a href="#">Drums</a></h4>
+                            <span class="aa-product-price">$45.50</span>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- start single product item -->
+                      <li>
+                        <figure>
+                          <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/Amps/llllaaa.JPG")" alt="polo shirt img"></a>
+                          <figcaption>
+                            <h4 class="aa-product-title"><a href="#">Amps</a></h4>
+                            <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- start single product item -->
+                      <li>
+                        <figure>
+                          <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/equipment/abcd.jpg")" alt="polo shirt img"></a>
+                          <figcaption>
+                            <h4 class="aa-product-title"><a href="#">Mics</a></h4>
+                            <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                          </figcaption>
+                        </figure>
+                        <!-- product badge -->
+
+                      </li>
+                      <!-- start single product item -->
+                      <li>
+                        <figure>
+                          <a class="aa-product-img" href="#"><img src="@routes.Assets.versioned("img/equipment/images.jpg")" alt="polo shirt img"></a>
+                          <figcaption>
+                            <h4 class="aa-product-title"><a href="#">Lighting</a></h4>
+                            <span class="aa-product-price">$45.50</span>
+                          </figcaption>
+                        </figure>
+                        <!-- product badge -->
+
+                      </li>
+                    </ul>
+
+                  </div>
+                  <!-- / men product category -->
+
+                </div>
+                <!-- / electronic product category -->
+              </div>
+
+              <!-- / quick view modal -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- / Products section -->
+  <!-- banner section -->
+  <section id="aa-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="aa-banner-area">
+              <a href="#"><img src="@routes.Assets.versioned("img/shane/banner1.jpg")" alt="Gift Ideas img"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Events -->
+  <section id="aa-latest-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-latest-blog-area">
+            <h2>LATEST EVENTS</h2>
+            <div class="row">
+              <!-- single latest blog -->
+              <div class="col-md-4 col-sm-4">
+                <div class="aa-latest-blog-single">
+                  <figure class="aa-blog-img">
+                    <a href="#"><img src="@routes.Assets.versioned("img/shane/event2.jpg")" alt="Robbie Williams img"></a>
+                    <figcaption class="aa-blog-img-caption">
+                      <span href="#"><i class="fa fa-clock-o"></i>June 17, 2017</span>
+                    </figcaption>
+                  </figure>
+                  <div class="aa-blog-info">
+                    <h3 class="aa-blog-title"><a href="#">Robbie Williams</a></h3>
+                    <p>It looks like the Aviva Stadium is going to be turned into one giant pop party next June 17th, as Robbie
+                      Williams has confirmed a pretty big name as his support act.</p>
+
+                    <p>Tickets for the Aviva gig are on sale this coming Friday, November 11th at 9am from <a href="http://www.ticketmaster.ie/Robbie-Williams-tickets/artist/783976?spotlight_ren_od=1&tm_link=tm_homeA_4_f1">
+                      ticketmaster</a> and are priced from €69.50 including booking fee.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- single latest blog -->
+              <div class="col-md-4 col-sm-4">
+                <div class="aa-latest-blog-single">
+                  <figure class="aa-blog-img">
+                    <a href="#"><img src="@routes.Assets.versioned("img/shane/event4.jpg")" alt="Black Sabbath img"></a>
+                    <figcaption class="aa-blog-img-caption">
+                      <span href="#"><i class="fa fa-clock-o"></i>Janurary 20, 2017</span>
+                    </figcaption>
+                  </figure>
+                  <div class="aa-blog-info">
+                    <h3 class="aa-blog-title"><a href="#">Black Sabbath</a></h3>
+                    <p>Black Sabbath announced that they will rock the 3arena in Dublin's docks early next year.
+                      The rock band
+                    </p>
+
+                    <p>Tickets for the 3arena gig are on sale now from <a href="http://www.ticketmaster.ie/black-sabbath-dublin-01-20-2017/event/180050C7921A146E?artistid=734569&majorcatid=10001&minorcatid=200">
+                      ticketmaster</a> and are priced from €93.50 excluding booking fee.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- single latest blog -->
+              <div class="col-md-4 col-sm-4">
+                <div class="aa-latest-blog-single">
+                  <figure class="aa-blog-img">
+                    <a href="#"><img src="@routes.Assets.versioned("img/shane/event3.jpg")" alt="The Coronas"></a>
+                    <figcaption class="aa-blog-img-caption">
+                      <span href="#"><i class="fa fa-clock-o"></i>June 9,10,11 2017</span>
+                    </figcaption>
+                  </figure>
+                  <div class="aa-blog-info">
+                    <h3 class="aa-blog-title"><a href="#">The Coronas</a></h3>
+                    <p>The Coronas are all set to take to the stage of The Olympia theatre in the heart of Dublin's
+                      City centre for 3 nights, The 9th, 10th and 11th of December 2016.</p>
+
+                    <p>Tickets for the Olympia gig are on sale now from <a href="http://www.ticketmaster.ie/The-Coronas-tickets/artist/1410136?tm_link=tm_homeA_h2">
+                      ticketmaster</a> and are priced from €34.50 excluding booking fee.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Latest Blog -->
+
+
+
+ <!-- Subscribe section -->
+  <section id="aa-subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-subscribe-area">
+            <h3>Subscribe our newsletter </h3>
+   <p>Full of details on Exciting Deals and Products We have at ITT Music</p>
+            <form action="" class="aa-subscribe-form">
+              <input type="email" name="" id="" placeholder="Enter your Email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Subscribe section -->
+
+ <!-- footer -->
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-top-area">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <h3>Main Menu</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="guitars.html">Guitars</a></li>
+                      <li><a href="drums.html">Drums</a></li>
+                      <li><a href="keyboards.html">Keyboards</a></li>
+                      <li><a href="events.html">Events</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Extra Links</h3>
+                      <ul class="aa-footer-nav">
+                  
+                        <li><a href="Amps.html">Amps</a></li>
+                        <li><a href="Lighting.html">Lighting</a></li>
+                          <li><a href="Mics.html">Mics</a></li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-4 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Contact Us</h3>
+                      <address>
+                        <p>ITT Music , Tallaght</p>
+                        <p><span class="fa fa-phone"></span>+1 2354635400</p>
+                        <p><span class="fa fa-envelope"></span>ITT Musicemail.com</p>
+                      </address>
+                      <div class="aa-footer-social">
+                        <a href="https://www.facebook.com/login/"><span class="fa fa-facebook"></span></a>
+                        <a href="https://twitter.com/twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="fa fa-twitter"></span></a>
+                        <a href="https://plus.google.com/collections/featured"><span class="fa fa-google-plus"></span></a>
+                        <a href="https://www.youtube.com/"><span class="fa fa-youtube"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
+  <!-- / footer -->
+
+ 
+
+
+}
